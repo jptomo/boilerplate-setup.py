@@ -2,4 +2,7 @@
 boilerplate-setup.py
 ====================
 
-This repository aim to be a boilerplate.
+.. code-block:: console
+
+   $ pip install cookiecutter
+   $ cookiecutter https://github.com/jptomo/boilerplate-setup.py
