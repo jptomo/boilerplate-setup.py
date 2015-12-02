@@ -17,7 +17,7 @@ class PyTest(TestCommand):
         TestCommand.initialize_options(self)
         self.pytest_args = []
         if len(sys.argv) == 2:
-            self.pytest_args = ['spam_ham_egg']
+            self.pytest_args = ['{{ cookiecutter.module_name }}']
 
     def finalize_options(self):
         TestCommand.finalize_options(self)
@@ -31,11 +31,11 @@ class PyTest(TestCommand):
 
 
 setup(
-    name='spam-ham-egg',
-    version=__import__('spam_ham_egg').__version__,
-    author='Tomohiro NAKAMURA',
-    author_email='quickness.net@gmail.com',
-    url='https://github.com/jptomo/boilerplate-setup.py',
+    name='{{ cookiecutter.package_name }}',
+    version=__import__('{{ cookiecutter.module_name }}').__version__,
+    author='{{ cookiecutter.author }}',
+    author_email='{{ cookiecutter.author_email }}',
+    url='{{ cookiecutter.url }}',
     description='',
     long_description=_read('README.rst'),
     packages=find_packages(),

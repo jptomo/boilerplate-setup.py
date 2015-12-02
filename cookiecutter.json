@@ -1,0 +1,8 @@
+{
+    "package_name": "package name",
+    "module_name": "{{ cookiecutter.package_name|replace('-', '_') }}",
+    "version": "0.0.1",
+    "author": "Tomohiro NAKAMURA",
+    "author_email": "quickness.net@gmail.com",
+    "url": "https://github.com/jptomo/boilerplate-setup.py"
+}
