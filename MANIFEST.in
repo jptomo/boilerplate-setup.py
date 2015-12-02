@@ -1,0 +1,1 @@
+recursive-include spam_ham_egg *.txt *.py
