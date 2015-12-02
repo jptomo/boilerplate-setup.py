@@ -3,10 +3,11 @@ language: python
 sudo: false
 python:
 - 2.7
+- 3.5
 env:
   matrix:
     - TOXENV=py27
-    - TOXENV=py27-ansible2
+    - TOXENV=py35
 install:
   - pip install tox
 script: tox

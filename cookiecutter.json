@@ -1,6 +1,7 @@
 {
     "package_name": "package-name",
     "module_name": "{{ cookiecutter.package_name|replace('-', '_') }}",
+    "license_year": "2015",
     "version": "0.0.1",
     "author": "Tomohiro NAKAMURA",
     "author_email": "quickness.net@gmail.com",
