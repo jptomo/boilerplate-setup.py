@@ -1,5 +1,5 @@
 {
-    "package_name": "package name",
+    "package_name": "package-name",
     "module_name": "{{ cookiecutter.package_name|replace('-', '_') }}",
     "version": "0.0.1",
     "author": "Tomohiro NAKAMURA",
